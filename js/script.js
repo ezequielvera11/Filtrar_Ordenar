@@ -40,13 +40,14 @@ document.addEventListener("DOMContentLoaded", (e) => {
   // Nuevo array que contendrá los objetos de tipo string
   let filterStrangeArray = [];
 
-  // Funcion que filtra el array
+  // Función que filtra el array
   strangeArray.filter((objeto) => {
     if (typeof objeto === "string") {
       filterStrangeArray.push(objeto);
     }
   })
 
+  //Función que ordena alfabeticamente
   function ordenarAlf (a, b) {
     if (a.toLowerCase() < b.toLowerCase()) {return -1};
     if (a.toLowerCase() > b.toLowerCase()) {return 1};
